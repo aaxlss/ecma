@@ -78,9 +78,36 @@ const a = 'b';// constante nueva en ES6 y no se puede reasignar
 
 let name = 'axel';
 let age = 28;
-let obj = {// old way to create objects
+let obj = {// old way to create objects ES5
     name: name,
     age: age,
 }
 
 let obj2 = {name, age}; // new wayt to create objects in ES6
+
+
+///arrow function
+const names = [
+    {
+        name: 'axel',
+        age: 28
+    },
+    {
+        name: 'alex',
+        age:56
+    }
+]
+
+let listOfName = names.map( function (item) {//old verstion to create functions
+    console.log(item.name)
+
+});
+
+let listOfName2 = names.map( (item) => { // new version to create functions
+    console.log(item.name)
+});
+
+let listOfName3 = (name, age, country) => {
+//... 
+}
+
