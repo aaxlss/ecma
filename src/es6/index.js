@@ -126,3 +126,22 @@ const helloPromise = () => {
 helloPromise()
 .then(response => console.log(`response: ${response}`))
 .catch(err => console.log(`error: ${err}`));
+
+
+//Creating clases
+
+class Calculater {
+    constructor(){
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+
+    sum (valueA, valueB) {
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA + valueB;
+    }
+}
+
+const calc = new Calculater();
+console.log(calc.sum(2,2));
