@@ -6,3 +6,12 @@ const obj = {
 
 let {name, ...all} = obj;
 console.log(name, all);
+
+const obj = {
+    name: 'axel',
+}
+const obj1 = {
+    ...obj,
+    country: 'Mx',
+}
+console.log(obj1);
