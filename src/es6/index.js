@@ -74,3 +74,13 @@ console.log(globalLet);// no se puede acceder a esta variable
 
 
 const a = 'b';// constante nueva en ES6 y no se puede reasignar
+
+
+let name = 'axel';
+let age = 28;
+let obj = {// old way to create objects
+    name: name,
+    age: age,
+}
+
+let obj2 = {name, age}; // new wayt to create objects in ES6
