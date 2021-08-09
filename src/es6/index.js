@@ -111,3 +111,18 @@ let listOfName3 = (name, age, country) => {
 //... 
 }
 
+// promises
+
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (false) {
+            return resolve('Hey!');
+        } else {
+            return reject('Ups');
+        }
+    });
+}
+
+helloPromise()
+.then(response => console.log(`response: ${response}`))
+.catch(err => console.log(`error: ${err}`));
