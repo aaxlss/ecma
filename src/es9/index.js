@@ -15,3 +15,18 @@ const obj1 = {
     country: 'Mx',
 }
 console.log(obj1);
+
+///////
+
+const helloWorld = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+        ?resolve('hello World')
+        :resolve(new Error('test error'))
+    });
+}
+
+helloWorld()
+.then(response => console.log(response))
+.catch(error => console.log(error))
+.finally(() => console.log('finish'));
