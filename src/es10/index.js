@@ -26,3 +26,9 @@ try {
 
 let entries = [['name', 'axel'], ['age',28]];
 console.log(Object.fromEntries(entries));
+
+
+let mySymbol = 'My Symbol';
+
+let symbol = Symbol(mySymbol);
+console.log(symbol.description)
